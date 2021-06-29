@@ -139,7 +139,24 @@ const InvoiceTableRow = ({items}) => {
 ```
 Rest of the components can be made simply by importing the json data.
 
+## Displaying the pdf page
+
+In the app.js you have to import the Invoice varibale from the Invoice.js and the invoiceData from the invoice-data.js to render the invoice form
+```js
+class App extends Component {
+  render() {
+    return (
+        <Fragment>
+            <PDFViewer width="1730" height="1000" className="app" >
+                <Invoice invoice={invoiceData}/>
+            </PDFViewer>
+        </Fragment>
+    );
+  }
+}
+```
+
 ## PDF viewing and downloading
 
-As said, it is displayed in teh browser in the form of a pdf and then you just press [ctr+P] to print or save as pdf or you can just download it.
+As said, it is displayed in the browser in the form of a pdf and then you just press [ctr+P] to print or save as pdf or you can just download it.
 <img src="pic2.png">
