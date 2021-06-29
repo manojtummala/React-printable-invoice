@@ -60,17 +60,17 @@ Create a file in the src folder naming "Data" and inside that create a file name
 
 To structure our printable invoice, the following components will be of interest to us.
 
-<Document /> represents the PDF document itself. It must be the root of the document tree element structure. It should only contain children of type <Page /> component.
+<Document> represents the PDF document itself. It must be the root of the document tree element structure. It should only contain children of type <Page /> component.
 
-<Page /> represents a single page within a PDF document. <Page /> has a default size of A4 with a portrait orientation.
+Page - represents a single page within a PDF document. <Page /> has a default size of A4 with a portrait orientation.
 
-<View /> is the fundamental component used for building the UI. It is designed to be nested inside other views and can have zero or more child components.
+View - is the fundamental component used for building the UI. It is designed to be nested inside other views and can have zero or more child components.
 
-<Text /> component is used for displaying text. It supports nesting of other <Text /> components.
+Text - component is used for displaying text. It supports nesting of other <Text /> components.
 
-<Image /> component is used for displaying images. Images may be JPG, PNG or base64 encoded image strings.(used here only if you have a logo to display)
+Image - component is used for displaying images. Images may be JPG, PNG or base64 encoded image strings.(used here only if you have a logo to display)
 
-<PDFViewer /> component will be used for displaying the PDF documents within the web browser.
+PDFViewer - component will be used for displaying the PDF documents within the web browser.
 
 More information is availble in [recat_pdf documentation](https://react-pdf.org/)
 
